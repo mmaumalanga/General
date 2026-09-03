@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bluerock – West Course | Tonga USA Golf Club Tournament</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --green-deep:#1c3d2e;
+    --green-mid:#2f5942;
+    --sand:#f4efe4;
+    --paper:#fffdf8;
+    --red:#a3352b;
+    --ink:#20261f;
+    --ink-soft:#5b6459;
+    --line:#d9d0bd;
+  }
+  *,*::before,*::after{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--sand);
+    color:var(--ink);
+    font-family:'Work Sans',sans-serif;
+    line-height:1.5;
+    padding:56px 20px 70px;
+  }
+  h1,h2{font-family:'Fraunces',serif;}
+
+  .sheet{
+    max-width:760px;
+    margin:0 auto;
+    background:var(--paper);
+    border:1px solid var(--line);
+    box-shadow:0 1px 0 var(--line), 0 18px 40px -22px rgba(28,61,46,0.35);
+  }
+
+  .sheet-head{
+    background:var(--green-deep);
+    color:var(--sand);
+    padding:38px 44px 32px;
+    position:relative;
+    overflow:hidden;
+  }
+  .sheet-head::after{
+    content:"";
+    position:absolute;
+    right:-40px; top:-40px;
+    width:180px; height:180px;
+    border-radius:50%;
+    border:2px solid rgba(244,239,228,0.14);
+  }
+  .club{
+    font-size:.72rem;
+    letter-spacing:.14em;
+    color:#c9d8c4;
+    margin:0 0 10px;
+  }
+  .sheet-head h1{
+    font-size:2rem;
+    font-weight:600;
+    margin:0 0 6px;
+    color:#fff;
+  }
+  .course-line{
+    font-size:1.02rem;
+    color:#e8e2cf;
+    margin:0;
+  }
+  .course-line .divider{
+    color:var(--red);
+    margin:0 10px;
+  }
+
+  table{
+    width:100%;
+    border-collapse:collapse;
+  }
+  thead th{
+    text-align:left;
+    font-family:'Work Sans',sans-serif;
+    font-weight:600;
+    font-size:.78rem;
+    letter-spacing:.04em;
+    color:var(--ink-soft);
+    padding:18px 20px 12px;
+    border-bottom:2px solid var(--green-deep);
+  }
+  thead th:first-child{padding-left:44px;}
+  thead th:last-child{padding-right:44px;}
+
+  tbody td{
+    padding:15px 20px;
+    font-size:.96rem;
+    border-bottom:1px solid var(--line);
+    vertical-align:top;
+  }
+  tbody td:first-child{
+    padding-left:44px;
+    font-family:'Fraunces',serif;
+    font-weight:600;
+    color:var(--green-deep);
+    white-space:nowrap;
+  }
+  tbody td:last-child{padding-right:44px;}
+  tbody tr:nth-child(even){background:#faf7ef;}
+  tbody tr:last-child td{border-bottom:none;}
+
+  .empty{color:var(--ink-soft); font-style:italic;}
+
+  tbody tr:last-child td{padding-bottom:24px;}
+
+  @media (max-width:640px){
+    .sheet-head{padding:30px 24px 26px;}
+    thead th:first-child, tbody td:first-child{padding-left:24px;}
+    thead th:last-child, tbody td:last-child{padding-right:24px;}
+    thead th, tbody td{padding-left:14px; padding-right:14px;}
+    table, thead, tbody, th, td, tr{display:block;}
+    thead{display:none;}
+    tbody tr{
+      padding:16px 24px;
+      border-bottom:1px solid var(--line);
+    }
+    tbody td{
+      border-bottom:none;
+      padding:4px 0;
+      white-space:normal;
+    }
+    tbody td:first-child{
+      font-size:1.05rem;
+      margin-bottom:4px;
+    }
+    tbody td:not(:first-child)::before{
+      content:attr(data-label) ": ";
+      color:var(--ink-soft);
+      font-size:.78rem;
+    }
+    tbody tr:last-child td{padding-bottom:4px;}
+    tbody tr:last-child{padding-bottom:24px;}
+  }
+</style>
+</head>
+<body>
+
+<div class="sheet">
+  <div class="sheet-head">
+    <p class="club">TONGA USA GOLF CLUB &nbsp;·&nbsp; TOURNAMENT TEE SHEET</p>
+    <h1>Bluerock Golf Course</h1>
+    <p class="course-line">Vallejo, CA <span class="divider">&middot;</span> West Course</p>
+    <p class="course-line">Friday, September 4th, 2026</p>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Time</th>
+        <th>Player 1</th>
+        <th>Player 2</th>
+        <th>Player 3</th>
+        <th>Player 4</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>9:00 am</td>
+        <td data-label="Player 1">Fatai Vailala</td>
+        <td data-label="Player 2">Pauli Vakameilalo</td>
+        <td data-label="Player 3">Valu Talivakaola</td>
+        <td data-label="Player 4">Vila Talanoa</td>
+      </tr>
+      <tr>
+        <td>9:10 am</td>
+        <td data-label="Player 1">Martin Virelas</td>
+        <td data-label="Player 2">Tivi Latu</td>
+        <td data-label="Player 3">Junior Moala</td>
+        <td data-label="Player 4">Michael Latu</td>
+      </tr>
+      <tr>
+        <td>9:20 am</td>
+        <td data-label="Player 1">Greg Davis</td>
+        <td data-label="Player 2">Jackson Birdsall</td>
+        <td data-label="Player 3">&lsquo;Otulea Tu&rsquo;ikolovatu</td>
+        <td data-label="Player 4">Laine Lau&rsquo;ese</td>
+      </tr>
+      <tr>
+        <td>9:30 am</td>
+        <td data-label="Player 1">Todd Munson</td>
+        <td data-label="Player 2">Ozzy Perez</td>
+        <td data-label="Player 3">Nils Olsen</td>
+        <td data-label="Player 4">Chris Fe&rsquo;ao</td>
+      </tr>
+      <tr>
+        <td>9:40 am</td>
+        <td data-label="Player 1">Solo Hokafonu</td>
+        <td data-label="Player 2">Simi Fakava</td>
+        <td data-label="Player 3">Anthony Tu&rsquo;iono</td>
+        <td data-label="Player 4">Tevita Fale&rsquo;ofa</td>
+      </tr>
+      <tr>
+        <td>9:50 am</td>
+        <td data-label="Player 1">Tevita Kongaika</td>
+        <td data-label="Player 2">Semisi Pulu</td>
+        <td data-label="Player 3">Felila &lsquo;Esikia</td>
+        <td data-label="Player 4">Pope Matu</td>
+      </tr>
+      <tr>
+        <td>10:00 am</td>
+        <td data-label="Player 1">Lani &lsquo;Akau&rsquo;ola</td>
+        <td data-label="Player 2">Sefo Kafoa</td>
+        <td data-label="Player 3">Frank Katoa</td>
+        <td data-label="Player 4">Tupe Leger</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>
