@@ -110,16 +110,7 @@
 
   .empty{color:var(--ink-soft); font-style:italic;}
 
-  .sheet-foot{
-    padding:20px 44px 34px;
-    font-size:.86rem;
-    color:var(--ink-soft);
-  }
-  .sheet-foot p{margin:0;}
-  .sheet-foot .mark{
-    color:var(--red);
-    margin-right:6px;
-  }
+  tbody tr:last-child td{padding-bottom:24px;}
 
   @media (max-width:640px){
     .sheet-head{padding:30px 24px 26px;}
@@ -146,7 +137,8 @@
       color:var(--ink-soft);
       font-size:.78rem;
     }
-    .sheet-foot{padding:18px 24px 28px;}
+    tbody tr:last-child td{padding-bottom:4px;}
+    tbody tr:last-child{padding-bottom:24px;}
   }
 </style>
 </head>
@@ -155,8 +147,9 @@
 <div class="sheet">
   <div class="sheet-head">
     <p class="club">TONGA USA GOLF CLUB &nbsp;·&nbsp; TOURNAMENT TEE SHEET</p>
-    <h1>Bluerock <span style="color:var(--red);">&ndash;</span> West Course</h1>
-    <p class="course-line">September 4th, 2026</p>
+    <h1>Bluerock Golf Course</h1>
+    <p class="course-line">Vallejo, CA <span class="divider">&middot;</span> West Course</p>
+    <p class="course-line">Friday, September 4th, 2026</p>
   </div>
 
   <table>
@@ -228,10 +221,6 @@
       </tr>
     </tbody>
   </table>
-
-  <div class="sheet-foot">
-    <p><span class="mark">&bull;</span>Handicaps in parenthesis</p>
-  </div>
 </div>
 
 </body>
